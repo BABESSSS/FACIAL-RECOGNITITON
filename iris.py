@@ -59,7 +59,7 @@ if(st.button('SUBMIT')):
 st.write(data)
 
 from PIL import Image
-image = Image.open('IRIS IMAGES\IRIS_IMAGE_3.jpeg')
+image = Image.open('IRIS-CLASSIFICATION-\IRIS_IMAGE_3.jpeg')
 st.sidebar.image(image)
 
 
@@ -98,13 +98,13 @@ pred = model.predict(input_values)
 
 if pred == 0:
     st.success('The Flower is an Iris-setosa')
-    setosa = Image.open('IRIS IMAGES\IRIS_IMAGE_1.jpeg')
+    setosa = Image.open('IRIS-CLASSIFICATION-\IRIS_IMAGE_1.jpeg')
     st.image(setosa, caption = 'Iris-setosa', width = 400)
 elif pred == 1:
     st.success('The Flower is an Iris-versicolor ')
-    versicolor = Image.open('IRIS IMAGES\IRIS_IMAGE_2.jpeg')
+    versicolor = Image.open('IRIS-CLASSIFICATION-\IRIS_IMAGE_2.jpeg')
     st.image(versicolor, caption = 'Iris-versicolor', width = 400)
 else:
     st.success('The Flower is an Iris-virginica ')
-    virginica = Image.open('IRIS IMAGES\IRIS_IMAGE_4.jpeg')
+    virginica = Image.open('IRIS-CLASSIFICATION-\IRIS_IMAGE_4.jpeg')
     st.image(virginica, caption = 'Iris-virginica', width = 400 )
